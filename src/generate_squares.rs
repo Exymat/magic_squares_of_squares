@@ -40,7 +40,7 @@ fn can_be_sum_of_two_squares(n: u64) -> bool {
 
 /// Return all pairs (x, y) such that x² + y² == n using a two-pointers approach.
 /// If n is not expressible, an empty vector is returned.
-fn find_pairs_two_pointers(n: u64) -> Vec<(u64, u64)> {
+pub fn find_pairs_two_pointers(n: u64) -> Vec<(u64, u64)> {
     if !can_be_sum_of_two_squares(n) {
         return Vec::new();
     }
@@ -109,18 +109,4 @@ pub fn generate_squares_sum_fast(n: u64) -> FxHashMap<u64, Box<[(u64, u64)]>> {
         .flat_map_iter(batch_process)
         .map(|(n, pairs)| (n, pairs.into_boxed_slice()))
         .collect()
-}
-
-fn main() {
-    let start = Instant::now();
-    let n = 1_000_000;
-    let result = generate_squares_sum_fast(n);
-
-    let duration = start.elapsed();
-    println!("Time: {:.2} seconds", duration.as_secs_f64());
-
-    // Uncomment to see the results:
-    // for (n, pairs) in result {
-    //     println!("{}: {:?}", n, pairs);
-    // }
 }

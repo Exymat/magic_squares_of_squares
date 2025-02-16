@@ -1,0 +1,630 @@
+-----------------------
+✅ [p=7, k=1] N = 21609 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [10092])
+a = 74, b = 127, c = 2, d = 97, e = 58, f = 94, g = 82, h = 46, i = 113
+-----------------------
+✅ [p=13, k=1] N = 257049 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [142572])
+a = 233, b = 446, c = 62, d = 334, e = 218, f = 313, g = 302, h = 103, i = 394
+-----------------------
+✅ [p=19, k=1] N = 1172889 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [446988])
+a = 617, b = 878, c = 146, d = 718, e = 386, f = 713, g = 526, h = 503, i = 802
+-----------------------
+✅ [p=31, k=1] N = 8311689 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [3512172])
+a = 1537, b = 2434, c = 158, d = 1906, e = 1082, f = 1873, g = 1522, h = 1103, i = 2186
+-----------------------
+✅ [p=37, k=1] N = 16867449 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [6032172])
+a = 2458, b = 3191, c = 802, d = 2729, e = 1418, f = 2722, g = 1838, h = 2162, i = 2969
+-----------------------
+✅ [p=43, k=1] N = 30769209 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [12216972])
+a = 3074, b = 4583, c = 562, d = 3673, e = 2018, f = 3634, g = 2798, h = 2386, i = 4153
+-----------------------
+✅ [p=61, k=1] N = 124612569 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [43365612])
+a = 6857, b = 8434, c = 2542, d = 7426, e = 3802, f = 7417, g = 4738, h = 6247, i = 7946
+-----------------------
+✅ [p=67, k=1] N = 181360089 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [91179507])
+a = 6514, b = 11758, c = 823, d = 8878, e = 5513, f = 8494, g = 7753, h = 3566, i = 10418
+-----------------------
+✅ [p=73, k=1] N = 255584169 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [94685772])
+a = 9298, b = 12751, c = 2558, d = 10609, e = 5618, f = 10558, g = 7522, h = 7838, i = 11729
+-----------------------
+✅ [p=79, k=1] N = 350550729 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [184443843])
+a = 8842, b = 16418, c = 1679, d = 12338, e = 7841, f = 11698, g = 10961, h = 4418, i = 14522
+-----------------------
+✅ [p=97, k=1] N = 796763529 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [463813068])
+a = 12658, b = 24863, c = 4286, d = 18593, e = 12434, f = 17218, g = 17054, h = 4898, i = 21953
+-----------------------
+✅ [p=103, k=1] N = 1012957929 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [447179043])
+a = 16538, b = 27182, c = 769, d = 21022, e = 12209, f = 20542, g = 17249, h = 11182, i = 24298
+-----------------------
+✅ [p=109, k=1] N = 1270423449 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [465530547])
+a = 20906, b = 28222, c = 6073, d = 23662, e = 12457, f = 23566, g = 16537, h = 17854, i = 26042
+-----------------------
+✅ [p=127, k=1] N = 2341301769 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [796874412])
+a = 30529, b = 35342, c = 12658, d = 32222, e = 16298, f = 32209, g = 19262, h = 28751, i = 33818
+-----------------------
+✅ [p=139, k=1] N = 3359709369 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [1739828172])
+a = 27602, b = 50759, c = 4622, d = 38201, e = 24082, f = 36338, g = 33742, h = 14258, i = 44921
+-----------------------
+✅ [p=151, k=1] N = 4678970409 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [2018183907])
+a = 36026, b = 58082, c = 2753, d = 45202, e = 25937, f = 44306, g = 36577, h = 25154, i = 52042
+-----------------------
+✅ [p=157, k=1] N = 5468158809 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [1916325228])
+a = 45098, b = 56327, c = 16174, d = 49177, e = 25274, f = 49102, g = 31874, h = 40702, i = 52873
+-----------------------
+✅ [p=163, k=1] N = 6353205849 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [3109360908])
+a = 39113, b = 69362, c = 3506, d = 52562, e = 32194, f = 50537, g = 45394, h = 22487, i = 61538
+-----------------------
+✅ [p=181, k=1] N = 9659548089 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [5696864787])
+a = 43786, b = 86578, c = 15703, d = 64738, e = 43577, f = 59746, g = 59593, h = 16274, i = 76442
+-----------------------
+✅ [p=193, k=1] N = 12487392009 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [4394467587])
+a = 67874, b = 85502, c = 23873, d = 74302, e = 38273, f = 74174, g = 48577, h = 60926, i = 80098
+-----------------------
+✅ [p=199, k=1] N = 14114152809 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [5479353507])
+a = 66826, b = 97198, c = 14177, d = 78718, e = 42737, f = 78046, g = 58753, h = 53294, i = 88442
+-----------------------
+✅ [p=7, k=2] N = 86436 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [40368])
+a = 148, b = 254, c = 4, d = 194, e = 116, f = 188, g = 164, h = 92, i = 226
+-----------------------
+✅ [p=13, k=2] N = 1028196 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [570288])
+a = 466, b = 892, c = 124, d = 668, e = 436, f = 626, g = 604, h = 206, i = 788
+-----------------------
+✅ [p=19, k=2] N = 4691556 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [1787952])
+a = 1234, b = 1756, c = 292, d = 1436, e = 772, f = 1426, g = 1052, h = 1006, i = 1604
+-----------------------
+✅ [p=31, k=2] N = 33246756 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [14048688])
+a = 3074, b = 4868, c = 316, d = 3812, e = 2164, f = 3746, g = 3044, h = 2206, i = 4372
+-----------------------
+✅ [p=37, k=2] N = 67469796 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [24128688])
+a = 4916, b = 6382, c = 1604, d = 5458, e = 2836, f = 5444, g = 3676, h = 4324, i = 5938
+-----------------------
+✅ [p=43, k=2] N = 123076836 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [48867888])
+a = 6148, b = 9166, c = 1124, d = 7346, e = 4036, f = 7268, g = 5596, h = 4772, i = 8306
+-----------------------
+✅ [p=61, k=2] N = 498450276 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [173462448])
+a = 13714, b = 16868, c = 5084, d = 14852, e = 7604, f = 14834, g = 9476, h = 12494, i = 15892
+-----------------------
+✅ [p=67, k=2] N = 725440356 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [364718028])
+a = 13028, b = 23516, c = 1646, d = 17756, e = 11026, f = 16988, g = 15506, h = 7132, i = 20836
+-----------------------
+✅ [p=73, k=2] N = 1022336676 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [378743088])
+a = 18596, b = 25502, c = 5116, d = 21218, e = 11236, f = 21116, g = 15044, h = 15676, i = 23458
+-----------------------
+✅ [p=79, k=2] N = 1402202916 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [737775372])
+a = 17684, b = 32836, c = 3358, d = 24676, e = 15682, f = 23396, g = 21922, h = 8836, i = 29044
+-----------------------
+✅ [p=97, k=2] N = 3187054116 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [1855252272])
+a = 25316, b = 49726, c = 8572, d = 37186, e = 24868, f = 34436, g = 34108, h = 9796, i = 43906
+-----------------------
+✅ [p=103, k=2] N = 4051831716 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [1788716172])
+a = 33076, b = 54364, c = 1538, d = 42044, e = 24418, f = 41084, g = 34498, h = 22364, i = 48596
+-----------------------
+✅ [p=109, k=2] N = 5081693796 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [1862122188])
+a = 41812, b = 56444, c = 12146, d = 47324, e = 24914, f = 47132, g = 33074, h = 35708, i = 52084
+-----------------------
+✅ [p=127, k=2] N = 9365207076 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [3187497648])
+a = 61058, b = 70684, c = 25316, d = 64444, e = 32596, f = 64418, g = 38524, h = 57502, i = 67636
+-----------------------
+✅ [p=139, k=2] N = 13438837476 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [6959312688])
+a = 55204, b = 101518, c = 9244, d = 76402, e = 48164, f = 72676, g = 67484, h = 28516, i = 89842
+-----------------------
+✅ [p=151, k=2] N = 18715881636 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [8072735628])
+a = 72052, b = 116164, c = 5506, d = 90404, e = 51874, f = 88612, g = 73154, h = 50308, i = 104084
+-----------------------
+✅ [p=157, k=2] N = 21872635236 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [7665300912])
+a = 90196, b = 112654, c = 32348, d = 98354, e = 50548, f = 98204, g = 63748, h = 81404, i = 105746
+-----------------------
+✅ [p=163, k=2] N = 25412823396 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [12437443632])
+a = 78226, b = 138724, c = 7012, d = 105124, e = 64388, f = 101074, g = 90788, h = 44974, i = 123076
+-----------------------
+✅ [p=181, k=2] N = 38638192356 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [22787459148])
+a = 87572, b = 173156, c = 31406, d = 129476, e = 87154, f = 119492, g = 119186, h = 32548, i = 152884
+-----------------------
+✅ [p=193, k=2] N = 49949568036 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [17577870348])
+a = 135748, b = 171004, c = 47746, d = 148604, e = 76546, f = 148348, g = 97154, h = 121852, i = 160196
+-----------------------
+✅ [p=199, k=2] N = 56456611236 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [21917414028])
+a = 133652, b = 194396, c = 28354, d = 157436, e = 85474, f = 156092, g = 117506, h = 106588, i = 176884
+-----------------------
+✅ [p=7, k=3] N = 194481 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [90828])
+a = 222, b = 381, c = 6, d = 291, e = 174, f = 282, g = 246, h = 138, i = 339
+-----------------------
+✅ [p=13, k=3] N = 2313441 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [1283148])
+a = 699, b = 1338, c = 186, d = 1002, e = 654, f = 939, g = 906, h = 309, i = 1182
+-----------------------
+✅ [p=19, k=3] N = 10556001 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [4022892])
+a = 1851, b = 2634, c = 438, d = 2154, e = 1158, f = 2139, g = 1578, h = 1509, i = 2406
+-----------------------
+✅ [p=31, k=3] N = 74805201 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [31609548])
+a = 4611, b = 7302, c = 474, d = 5718, e = 3246, f = 5619, g = 4566, h = 3309, i = 6558
+-----------------------
+✅ [p=37, k=3] N = 151807041 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [54289548])
+a = 7374, b = 9573, c = 2406, d = 8187, e = 4254, f = 8166, g = 5514, h = 6486, i = 8907
+-----------------------
+✅ [p=43, k=3] N = 276922881 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [109952748])
+a = 9222, b = 13749, c = 1686, d = 11019, e = 6054, f = 10902, g = 8394, h = 7158, i = 12459
+-----------------------
+✅ [p=61, k=3] N = 1121513121 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [390290508])
+a = 20571, b = 25302, c = 7626, d = 22278, e = 11406, f = 22251, g = 14214, h = 18741, i = 23838
+-----------------------
+✅ [p=67, k=3] N = 1632240801 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [820615563])
+a = 19542, b = 35274, c = 2469, d = 26634, e = 16539, f = 25482, g = 23259, h = 10698, i = 31254
+-----------------------
+✅ [p=73, k=3] N = 2300257521 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [852171948])
+a = 27894, b = 38253, c = 7674, d = 31827, e = 16854, f = 31674, g = 22566, h = 23514, i = 35187
+-----------------------
+✅ [p=79, k=3] N = 3154956561 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [1659994587])
+a = 26526, b = 49254, c = 5037, d = 37014, e = 23523, f = 35094, g = 32883, h = 13254, i = 43566
+-----------------------
+✅ [p=97, k=3] N = 7170871761 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [4174317612])
+a = 37974, b = 74589, c = 12858, d = 55779, e = 37302, f = 51654, g = 51162, h = 14694, i = 65859
+-----------------------
+✅ [p=103, k=3] N = 9116621361 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [4024611387])
+a = 49614, b = 81546, c = 2307, d = 63066, e = 36627, f = 61626, g = 51747, h = 33546, i = 72894
+-----------------------
+✅ [p=109, k=3] N = 11433811041 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [4189774923])
+a = 62718, b = 84666, c = 18219, d = 70986, e = 37371, f = 70698, g = 49611, h = 53562, i = 78126
+-----------------------
+✅ [p=127, k=3] N = 21071715921 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [7171869708])
+a = 91587, b = 106026, c = 37974, d = 96666, e = 48894, f = 96627, g = 57786, h = 86253, i = 101454
+-----------------------
+✅ [p=139, k=3] N = 30237384321 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [15658453548])
+a = 82806, b = 152277, c = 13866, d = 114603, e = 72246, f = 109014, g = 101226, h = 42774, i = 134763
+-----------------------
+✅ [p=151, k=3] N = 42110733681 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [18163655163])
+a = 108078, b = 174246, c = 8259, d = 135606, e = 77811, f = 132918, g = 109731, h = 75462, i = 156126
+-----------------------
+✅ [p=157, k=3] N = 49213429281 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [17246927052])
+a = 135294, b = 168981, c = 48522, d = 147531, e = 75822, f = 147306, g = 95622, h = 122106, i = 158619
+-----------------------
+✅ [p=163, k=3] N = 57178852641 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [27984248172])
+a = 117339, b = 208086, c = 10518, d = 157686, e = 96582, f = 151611, g = 136182, h = 67461, i = 184614
+-----------------------
+✅ [p=181, k=3] N = 86935932801 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [51271783083])
+a = 131358, b = 259734, c = 47109, d = 194214, e = 130731, f = 179238, g = 178779, h = 48822, i = 229326
+-----------------------
+✅ [p=193, k=3] N = 112386528081 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [39550208283])
+a = 203622, b = 256506, c = 71619, d = 222906, e = 114819, f = 222522, g = 145731, h = 182778, i = 240294
+-----------------------
+✅ [p=199, k=3] N = 127027375281 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [49314181563])
+a = 200478, b = 291594, c = 42531, d = 236154, e = 128211, f = 234138, g = 176259, h = 159882, i = 265326
+-----------------------
+✅ [p=7, k=4] N = 345744 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [161472])
+a = 296, b = 508, c = 8, d = 388, e = 232, f = 376, g = 328, h = 184, i = 452
+-----------------------
+✅ [p=13, k=4] N = 4112784 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [2281152])
+a = 932, b = 1784, c = 248, d = 1336, e = 872, f = 1252, g = 1208, h = 412, i = 1576
+-----------------------
+✅ [p=19, k=4] N = 18766224 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [7151808])
+a = 2468, b = 3512, c = 584, d = 2872, e = 1544, f = 2852, g = 2104, h = 2012, i = 3208
+-----------------------
+✅ [p=31, k=4] N = 132987024 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [56194752])
+a = 6148, b = 9736, c = 632, d = 7624, e = 4328, f = 7492, g = 6088, h = 4412, i = 8744
+-----------------------
+✅ [p=37, k=4] N = 269879184 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [96514752])
+a = 9832, b = 12764, c = 3208, d = 10916, e = 5672, f = 10888, g = 7352, h = 8648, i = 11876
+-----------------------
+✅ [p=43, k=4] N = 492307344 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [195471552])
+a = 12296, b = 18332, c = 2248, d = 14692, e = 8072, f = 14536, g = 11192, h = 9544, i = 16612
+-----------------------
+✅ [p=61, k=4] N = 1993801104 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [693849792])
+a = 27428, b = 33736, c = 10168, d = 29704, e = 15208, f = 29668, g = 18952, h = 24988, i = 31784
+-----------------------
+✅ [p=67, k=4] N = 2901761424 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [1458872112])
+a = 26056, b = 47032, c = 3292, d = 35512, e = 22052, f = 33976, g = 31012, h = 14264, i = 41672
+-----------------------
+✅ [p=73, k=4] N = 4089346704 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [1514972352])
+a = 37192, b = 51004, c = 10232, d = 42436, e = 22472, f = 42232, g = 30088, h = 31352, i = 46916
+-----------------------
+✅ [p=79, k=4] N = 5608811664 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [2951101488])
+a = 35368, b = 65672, c = 6716, d = 49352, e = 31364, f = 46792, g = 43844, h = 17672, i = 58088
+-----------------------
+✅ [p=97, k=4] N = 12748216464 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [7421009088])
+a = 50632, b = 99452, c = 17144, d = 74372, e = 49736, f = 68872, g = 68216, h = 19592, i = 87812
+-----------------------
+✅ [p=103, k=4] N = 16207326864 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [7154864688])
+a = 66152, b = 108728, c = 3076, d = 84088, e = 48836, f = 82168, g = 68996, h = 44728, i = 97192
+-----------------------
+✅ [p=109, k=4] N = 20326775184 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [7448488752])
+a = 83624, b = 112888, c = 24292, d = 94648, e = 49828, f = 94264, g = 66148, h = 71416, i = 104168
+-----------------------
+✅ [p=127, k=4] N = 37460828304 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [12749990592])
+a = 122116, b = 141368, c = 50632, d = 128888, e = 65192, f = 128836, g = 77048, h = 115004, i = 135272
+-----------------------
+✅ [p=139, k=4] N = 53755349904 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [27837250752])
+a = 110408, b = 203036, c = 18488, d = 152804, e = 96328, f = 145352, g = 134968, h = 57032, i = 179684
+-----------------------
+✅ [p=151, k=4] N = 74863526544 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [32290942512])
+a = 144104, b = 232328, c = 11012, d = 180808, e = 103748, f = 177224, g = 146308, h = 100616, i = 208168
+-----------------------
+✅ [p=157, k=4] N = 87490540944 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [30661203648])
+a = 180392, b = 225308, c = 64696, d = 196708, e = 101096, f = 196408, g = 127496, h = 162808, i = 211492
+-----------------------
+✅ [p=163, k=4] N = 101651293584 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [49749774528])
+a = 156452, b = 277448, c = 14024, d = 210248, e = 128776, f = 202148, g = 181576, h = 89948, i = 246152
+-----------------------
+✅ [p=181, k=4] N = 154552769424 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [91149836592])
+a = 175144, b = 346312, c = 62812, d = 258952, e = 174308, f = 238984, g = 238372, h = 65096, i = 305768
+-----------------------
+✅ [p=193, k=4] N = 199798272144 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [70311481392])
+a = 271496, b = 342008, c = 95492, d = 297208, e = 153092, f = 296696, g = 194308, h = 243704, i = 320392
+-----------------------
+✅ [p=199, k=4] N = 225826444944 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [87669656112])
+a = 267304, b = 388792, c = 56708, d = 314872, e = 170948, f = 312184, g = 235012, h = 213176, i = 353768
+-----------------------
+✅ [p=7, k=5] N = 540225 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [252300])
+a = 370, b = 635, c = 10, d = 485, e = 290, f = 470, g = 410, h = 230, i = 565
+-----------------------
+✅ [p=13, k=5] N = 6426225 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [3564300])
+a = 1165, b = 2230, c = 310, d = 1670, e = 1090, f = 1565, g = 1510, h = 515, i = 1970
+-----------------------
+✅ [p=19, k=5] N = 29322225 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [11174700])
+a = 3085, b = 4390, c = 730, d = 3590, e = 1930, f = 3565, g = 2630, h = 2515, i = 4010
+-----------------------
+✅ [p=31, k=5] N = 207792225 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [87804300])
+a = 7685, b = 12170, c = 790, d = 9530, e = 5410, f = 9365, g = 7610, h = 5515, i = 10930
+-----------------------
+✅ [p=37, k=5] N = 421686225 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [150804300])
+a = 12290, b = 15955, c = 4010, d = 13645, e = 7090, f = 13610, g = 9190, h = 10810, i = 14845
+-----------------------
+✅ [p=43, k=5] N = 769230225 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [305424300])
+a = 15370, b = 22915, c = 2810, d = 18365, e = 10090, f = 18170, g = 13990, h = 11930, i = 20765
+-----------------------
+✅ [p=61, k=5] N = 3115314225 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [1084140300])
+a = 34285, b = 42170, c = 12710, d = 37130, e = 19010, f = 37085, g = 23690, h = 31235, i = 39730
+-----------------------
+✅ [p=67, k=5] N = 4534002225 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [2279487675])
+a = 32570, b = 58790, c = 4115, d = 44390, e = 27565, f = 42470, g = 38765, h = 17830, i = 52090
+-----------------------
+✅ [p=73, k=5] N = 6389604225 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [2367144300])
+a = 46490, b = 63755, c = 12790, d = 53045, e = 28090, f = 52790, g = 37610, h = 39190, i = 58645
+-----------------------
+✅ [p=79, k=5] N = 8763768225 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [4611096075])
+a = 44210, b = 82090, c = 8395, d = 61690, e = 39205, f = 58490, g = 54805, h = 22090, i = 72610
+-----------------------
+✅ [p=97, k=5] N = 19919088225 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [11595326700])
+a = 63290, b = 124315, c = 21430, d = 92965, e = 62170, f = 86090, g = 85270, h = 24490, i = 109765
+-----------------------
+✅ [p=103, k=5] N = 25323948225 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [11179476075])
+a = 82690, b = 135910, c = 3845, d = 105110, e = 61045, f = 102710, g = 86245, h = 55910, i = 121490
+-----------------------
+✅ [p=109, k=5] N = 31760586225 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [11638263675])
+a = 104530, b = 141110, c = 30365, d = 118310, e = 62285, f = 117830, g = 82685, h = 89270, i = 130210
+-----------------------
+✅ [p=127, k=5] N = 58532544225 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [19921860300])
+a = 152645, b = 176710, c = 63290, d = 161110, e = 81490, f = 161045, g = 96310, h = 143755, i = 169090
+-----------------------
+✅ [p=139, k=5] N = 83992734225 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [43495704300])
+a = 138010, b = 253795, c = 23110, d = 191005, e = 120410, f = 181690, g = 168710, h = 71290, i = 224605
+-----------------------
+✅ [p=151, k=5] N = 116974260225 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [50454597675])
+a = 180130, b = 290410, c = 13765, d = 226010, e = 129685, f = 221530, g = 182885, h = 125770, i = 260210
+-----------------------
+✅ [p=157, k=5] N = 136703970225 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [47908130700])
+a = 225490, b = 281635, c = 80870, d = 245885, e = 126370, f = 245510, g = 159370, h = 203510, i = 264365
+-----------------------
+✅ [p=163, k=5] N = 158830146225 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [77734022700])
+a = 195565, b = 346810, c = 17530, d = 262810, e = 160970, f = 252685, g = 226970, h = 112435, i = 307690
+-----------------------
+✅ [p=181, k=5] N = 241488702225 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [142421619675])
+a = 218930, b = 432890, c = 78515, d = 323690, e = 217885, f = 298730, g = 297965, h = 81370, i = 382210
+-----------------------
+✅ [p=193, k=5] N = 312184800225 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [109861689675])
+a = 339370, b = 427510, c = 119365, d = 371510, e = 191365, f = 370870, g = 242885, h = 304630, i = 400490
+-----------------------
+✅ [p=199, k=5] N = 352853820225 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [136983837675])
+a = 334130, b = 485990, c = 70885, d = 393590, e = 213685, f = 390230, g = 293765, h = 266470, i = 442210
+-----------------------
+✅ [p=7, k=6] N = 777924 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [363312])
+a = 444, b = 762, c = 12, d = 582, e = 348, f = 564, g = 492, h = 276, i = 678
+-----------------------
+✅ [p=13, k=6] N = 9253764 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [5132592])
+a = 1398, b = 2676, c = 372, d = 2004, e = 1308, f = 1878, g = 1812, h = 618, i = 2364
+-----------------------
+✅ [p=19, k=6] N = 42224004 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [16091568])
+a = 3702, b = 5268, c = 876, d = 4308, e = 2316, f = 4278, g = 3156, h = 3018, i = 4812
+-----------------------
+✅ [p=31, k=6] N = 299220804 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [126438192])
+a = 9222, b = 14604, c = 948, d = 11436, e = 6492, f = 11238, g = 9132, h = 6618, i = 13116
+-----------------------
+✅ [p=37, k=6] N = 607228164 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [217158192])
+a = 14748, b = 19146, c = 4812, d = 16374, e = 8508, f = 16332, g = 11028, h = 12972, i = 17814
+-----------------------
+✅ [p=43, k=6] N = 1107691524 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [439810992])
+a = 18444, b = 27498, c = 3372, d = 22038, e = 12108, f = 21804, g = 16788, h = 14316, i = 24918
+-----------------------
+✅ [p=61, k=6] N = 4486052484 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [1561162032])
+a = 41142, b = 50604, c = 15252, d = 44556, e = 22812, f = 44502, g = 28428, h = 37482, i = 47676
+-----------------------
+✅ [p=67, k=6] N = 6528963204 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [3282462252])
+a = 39084, b = 70548, c = 4938, d = 53268, e = 33078, f = 50964, g = 46518, h = 21396, i = 62508
+-----------------------
+✅ [p=73, k=6] N = 9201030084 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [3408687792])
+a = 55788, b = 76506, c = 15348, d = 63654, e = 33708, f = 63348, g = 45132, h = 47028, i = 70374
+-----------------------
+✅ [p=79, k=6] N = 12619826244 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [6639978348])
+a = 53052, b = 98508, c = 10074, d = 74028, e = 47046, f = 70188, g = 65766, h = 26508, i = 87132
+-----------------------
+✅ [p=97, k=6] N = 28683487044 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [16697270448])
+a = 75948, b = 149178, c = 25716, d = 111558, e = 74604, f = 103308, g = 102324, h = 29388, i = 131718
+-----------------------
+✅ [p=103, k=6] N = 36466485444 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [16098445548])
+a = 99228, b = 163092, c = 4614, d = 126132, e = 73254, f = 123252, g = 103494, h = 67092, i = 145788
+-----------------------
+✅ [p=109, k=6] N = 45735244164 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [16759099692])
+a = 125436, b = 169332, c = 36438, d = 141972, e = 74742, f = 141396, g = 99222, h = 107124, i = 156252
+-----------------------
+✅ [p=127, k=6] N = 84286863684 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [28687478832])
+a = 183174, b = 212052, c = 75948, d = 193332, e = 97788, f = 193254, g = 115572, h = 172506, i = 202908
+-----------------------
+✅ [p=139, k=6] N = 120949537284 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [62633814192])
+a = 165612, b = 304554, c = 27732, d = 229206, e = 144492, f = 218028, g = 202452, h = 85548, i = 269526
+-----------------------
+✅ [p=151, k=6] N = 168442934724 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [72654620652])
+a = 216156, b = 348492, c = 16518, d = 271212, e = 155622, f = 265836, g = 219462, h = 150924, i = 312252
+-----------------------
+✅ [p=157, k=6] N = 196853717124 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [68987708208])
+a = 270588, b = 337962, c = 97044, d = 295062, e = 151644, f = 294612, g = 191244, h = 244212, i = 317238
+-----------------------
+✅ [p=163, k=6] N = 228715410564 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [111936992688])
+a = 234678, b = 416172, c = 21036, d = 315372, e = 193164, f = 303222, g = 272364, h = 134922, i = 369228
+-----------------------
+✅ [p=181, k=6] N = 347743731204 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [205087132332])
+a = 262716, b = 519468, c = 94218, d = 388428, e = 261462, f = 358476, g = 357558, h = 97644, i = 458652
+-----------------------
+✅ [p=193, k=6] N = 449546112324 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [158200833132])
+a = 407244, b = 513012, c = 143238, d = 445812, e = 229638, f = 445044, g = 291462, h = 365556, i = 480588
+-----------------------
+✅ [p=199, k=6] N = 508109501124 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [197256726252])
+a = 400956, b = 583188, c = 85062, d = 472308, e = 256422, f = 468276, g = 352518, h = 319764, i = 530652
+-----------------------
+✅ [p=7, k=7] N = 1058841 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [494508])
+a = 518, b = 889, c = 14, d = 679, e = 406, f = 658, g = 574, h = 322, i = 791
+-----------------------
+✅ [p=13, k=7] N = 12595401 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [6986028])
+a = 1631, b = 3122, c = 434, d = 2338, e = 1526, f = 2191, g = 2114, h = 721, i = 2758
+-----------------------
+✅ [p=19, k=7] N = 57471561 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [21902412])
+a = 4319, b = 6146, c = 1022, d = 5026, e = 2702, f = 4991, g = 3682, h = 3521, i = 5614
+-----------------------
+✅ [p=31, k=7] N = 407272761 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [172096428])
+a = 10759, b = 17038, c = 1106, d = 13342, e = 7574, f = 13111, g = 10654, h = 7721, i = 15302
+-----------------------
+✅ [p=37, k=7] N = 826505001 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [295576428])
+a = 17206, b = 22337, c = 5614, d = 19103, e = 9926, f = 19054, g = 12866, h = 15134, i = 20783
+-----------------------
+✅ [p=43, k=7] N = 1507691241 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [598631628])
+a = 21518, b = 32081, c = 3934, d = 25711, e = 14126, f = 25438, g = 19586, h = 16702, i = 29071
+-----------------------
+✅ [p=61, k=7] N = 6106015881 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [2124914988])
+a = 47999, b = 59038, c = 17794, d = 51982, e = 26614, f = 51919, g = 33166, h = 43729, i = 55622
+-----------------------
+✅ [p=67, k=7] N = 8886644361 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [4467795843])
+a = 45598, b = 82306, c = 5761, d = 62146, e = 38591, f = 59458, g = 54271, h = 24962, i = 72926
+-----------------------
+✅ [p=73, k=7] N = 12523624281 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [4639602828])
+a = 65086, b = 89257, c = 17906, d = 74263, e = 39326, f = 73906, g = 52654, h = 54866, i = 82103
+-----------------------
+✅ [p=79, k=7] N = 17176985721 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [9037748307])
+a = 61894, b = 114926, c = 11753, d = 86366, e = 54887, f = 81886, g = 76727, h = 30926, i = 101654
+-----------------------
+✅ [p=97, k=7] N = 39041412921 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [22726840332])
+a = 88606, b = 174041, c = 30002, d = 130151, e = 87038, f = 120526, g = 119378, h = 34286, i = 153671
+-----------------------
+✅ [p=103, k=7] N = 49634938521 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [21911773107])
+a = 115766, b = 190274, c = 5383, d = 147154, e = 85463, f = 143794, g = 120743, h = 78274, i = 170086
+-----------------------
+✅ [p=109, k=7] N = 62250749001 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [22810996803])
+a = 146342, b = 197554, c = 42511, d = 165634, e = 87199, f = 164962, g = 115759, h = 124978, i = 182294
+-----------------------
+✅ [p=127, k=7] N = 114723786681 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [39046846188])
+a = 213703, b = 247394, c = 88606, d = 225554, e = 114086, f = 225463, g = 134834, h = 201257, i = 236726
+-----------------------
+✅ [p=139, k=7] N = 164625759081 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [85251580428])
+a = 193214, b = 355313, c = 32354, d = 267407, e = 168574, f = 254366, g = 236194, h = 99806, i = 314447
+-----------------------
+✅ [p=151, k=7] N = 229269550041 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [98891011443])
+a = 252182, b = 406574, c = 19271, d = 316414, e = 181559, f = 310142, g = 256039, h = 176078, i = 364294
+-----------------------
+✅ [p=157, k=7] N = 267939781641 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [93899936172])
+a = 315686, b = 394289, c = 113218, d = 344239, e = 176918, f = 343714, g = 223118, h = 284914, i = 370111
+-----------------------
+✅ [p=163, k=7] N = 311307086601 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [152358684492])
+a = 273791, b = 485534, c = 24542, d = 367934, e = 225358, f = 353759, g = 317758, h = 157409, i = 430766
+-----------------------
+✅ [p=181, k=7] N = 473317856361 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [279146374563])
+a = 306502, b = 606046, c = 109921, d = 453166, e = 305039, f = 418222, g = 417151, h = 113918, i = 535094
+-----------------------
+✅ [p=193, k=7] N = 611882208441 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [215328911763])
+a = 475118, b = 598514, c = 167111, d = 520114, e = 267911, f = 519218, g = 340039, h = 426482, i = 560686
+-----------------------
+✅ [p=199, k=7] N = 691593487641 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [268488321843])
+a = 467782, b = 680386, c = 99239, d = 551026, e = 299159, f = 546322, g = 411271, h = 373058, i = 619094
+-----------------------
+✅ [p=7, k=8] N = 1382976 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [645888])
+a = 592, b = 1016, c = 16, d = 776, e = 464, f = 752, g = 656, h = 368, i = 904
+-----------------------
+✅ [p=13, k=8] N = 16451136 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [9124608])
+a = 1864, b = 3568, c = 496, d = 2672, e = 1744, f = 2504, g = 2416, h = 824, i = 3152
+-----------------------
+✅ [p=19, k=8] N = 75064896 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [28607232])
+a = 4936, b = 7024, c = 1168, d = 5744, e = 3088, f = 5704, g = 4208, h = 4024, i = 6416
+-----------------------
+✅ [p=31, k=8] N = 531948096 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [224779008])
+a = 12296, b = 19472, c = 1264, d = 15248, e = 8656, f = 14984, g = 12176, h = 8824, i = 17488
+-----------------------
+✅ [p=37, k=8] N = 1079516736 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [386059008])
+a = 19664, b = 25528, c = 6416, d = 21832, e = 11344, f = 21776, g = 14704, h = 17296, i = 23752
+-----------------------
+✅ [p=43, k=8] N = 1969229376 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [781886208])
+a = 24592, b = 36664, c = 4496, d = 29384, e = 16144, f = 29072, g = 22384, h = 19088, i = 33224
+-----------------------
+✅ [p=61, k=8] N = 7975204416 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [2775399168])
+a = 54856, b = 67472, c = 20336, d = 59408, e = 30416, f = 59336, g = 37904, h = 49976, i = 63568
+-----------------------
+✅ [p=67, k=8] N = 11607045696 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [5835488448])
+a = 52112, b = 94064, c = 6584, d = 71024, e = 44104, f = 67952, g = 62024, h = 28528, i = 83344
+-----------------------
+✅ [p=73, k=8] N = 16357386816 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [6059889408])
+a = 74384, b = 102008, c = 20464, d = 84872, e = 44944, f = 84464, g = 60176, h = 62704, i = 93832
+-----------------------
+✅ [p=79, k=8] N = 22435246656 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [11804405952])
+a = 70736, b = 131344, c = 13432, d = 98704, e = 62728, f = 93584, g = 87688, h = 35344, i = 116176
+-----------------------
+✅ [p=97, k=8] N = 50992865856 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [29684036352])
+a = 101264, b = 198904, c = 34288, d = 148744, e = 99472, f = 137744, g = 136432, h = 39184, i = 175624
+-----------------------
+✅ [p=103, k=8] N = 64829307456 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [28619458752])
+a = 132304, b = 217456, c = 6152, d = 168176, e = 97672, f = 164336, g = 137992, h = 89456, i = 194384
+-----------------------
+✅ [p=109, k=8] N = 81307100736 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [29793955008])
+a = 167248, b = 225776, c = 48584, d = 189296, e = 99656, f = 188528, g = 132296, h = 142832, i = 208336
+-----------------------
+✅ [p=127, k=8] N = 149843313216 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [50999962368])
+a = 244232, b = 282736, c = 101264, d = 257776, e = 130384, f = 257672, g = 154096, h = 230008, i = 270544
+-----------------------
+✅ [p=139, k=8] N = 215021399616 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [111349003008])
+a = 220816, b = 406072, c = 36976, d = 305608, e = 192656, f = 290704, g = 269936, h = 114064, i = 359368
+-----------------------
+✅ [p=151, k=8] N = 299454106176 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [129163770048])
+a = 288208, b = 464656, c = 22024, d = 361616, e = 207496, f = 354448, g = 292616, h = 201232, i = 416336
+-----------------------
+✅ [p=157, k=8] N = 349962163776 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [122644814592])
+a = 360784, b = 450616, c = 129392, d = 393416, e = 202192, f = 392816, g = 254992, h = 325616, i = 422984
+-----------------------
+✅ [p=163, k=8] N = 406605174336 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [198999098112])
+a = 312904, b = 554896, c = 28048, d = 420496, e = 257552, f = 404296, g = 363152, h = 179896, i = 492304
+-----------------------
+✅ [p=181, k=8] N = 618211077696 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [364599346368])
+a = 350288, b = 692624, c = 125624, d = 517904, e = 348616, f = 477968, g = 476744, h = 130192, i = 611536
+-----------------------
+✅ [p=193, k=8] N = 799193088576 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [281245925568])
+a = 542992, b = 684016, c = 190984, d = 594416, e = 306184, f = 593392, g = 388616, h = 487408, i = 640784
+-----------------------
+✅ [p=199, k=8] N = 903305779776 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [350678624448])
+a = 534608, b = 777584, c = 113416, d = 629744, e = 341896, f = 624368, g = 470024, h = 426352, i = 707536
+-----------------------
+✅ [p=7, k=9] N = 1750329 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [817452])
+a = 666, b = 1143, c = 18, d = 873, e = 522, f = 846, g = 738, h = 414, i = 1017
+-----------------------
+✅ [p=13, k=9] N = 20820969 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [11548332])
+a = 2097, b = 4014, c = 558, d = 3006, e = 1962, f = 2817, g = 2718, h = 927, i = 3546
+-----------------------
+✅ [p=19, k=9] N = 95004009 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [36206028])
+a = 5553, b = 7902, c = 1314, d = 6462, e = 3474, f = 6417, g = 4734, h = 4527, i = 7218
+-----------------------
+✅ [p=31, k=9] N = 673246809 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [284485932])
+a = 13833, b = 21906, c = 1422, d = 17154, e = 9738, f = 16857, g = 13698, h = 9927, i = 19674
+-----------------------
+✅ [p=37, k=9] N = 1366263369 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [488605932])
+a = 22122, b = 28719, c = 7218, d = 24561, e = 12762, f = 24498, g = 16542, h = 19458, i = 26721
+-----------------------
+✅ [p=43, k=9] N = 2492305929 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [989574732])
+a = 27666, b = 41247, c = 5058, d = 33057, e = 18162, f = 32706, g = 25182, h = 21474, i = 37377
+-----------------------
+✅ [p=61, k=9] N = 10093618089 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [3512614572])
+a = 61713, b = 75906, c = 22878, d = 66834, e = 34218, f = 66753, g = 42642, h = 56223, i = 71514
+-----------------------
+✅ [p=67, k=9] N = 14690167209 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [7385540067])
+a = 58626, b = 105822, c = 7407, d = 79902, e = 49617, f = 76446, g = 69777, h = 32094, i = 93762
+-----------------------
+✅ [p=73, k=9] N = 20702317689 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [7669547532])
+a = 83682, b = 114759, c = 23022, d = 95481, e = 50562, f = 95022, g = 67698, h = 70542, i = 105561
+-----------------------
+✅ [p=79, k=9] N = 28394609049 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [14939951283])
+a = 79578, b = 147762, c = 15111, d = 111042, e = 70569, f = 105282, g = 98649, h = 39762, i = 130698
+-----------------------
+✅ [p=97, k=9] N = 64537845849 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [37568858508])
+a = 113922, b = 223767, c = 38574, d = 167337, e = 111906, f = 154962, g = 153486, h = 44082, i = 197577
+-----------------------
+✅ [p=103, k=9] N = 82049592249 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [36221502483])
+a = 148842, b = 244638, c = 6921, d = 189198, e = 109881, f = 184878, g = 155241, h = 100638, i = 218682
+-----------------------
+✅ [p=109, k=9] N = 102904299369 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [37707974307])
+a = 188154, b = 253998, c = 54657, d = 212958, e = 112113, f = 212094, g = 148833, h = 160686, i = 234378
+-----------------------
+✅ [p=127, k=9] N = 189645443289 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [64546827372])
+a = 274761, b = 318078, c = 113922, d = 289998, e = 146682, f = 289881, g = 173358, h = 258759, i = 304362
+-----------------------
+✅ [p=139, k=9] N = 272136458889 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [140926081932])
+a = 248418, b = 456831, c = 41598, d = 343809, e = 216738, f = 327042, g = 303678, h = 128322, i = 404289
+-----------------------
+✅ [p=151, k=9] N = 378996603129 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [163472896467])
+a = 324234, b = 522738, c = 24777, d = 406818, e = 233433, f = 398754, g = 329193, h = 226386, i = 468378
+-----------------------
+✅ [p=157, k=9] N = 442920863529 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [155222343468])
+a = 405882, b = 506943, c = 145566, d = 442593, e = 227466, f = 441918, g = 286866, h = 366318, i = 475857
+-----------------------
+✅ [p=163, k=9] N = 514609673769 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [251858233548])
+a = 352017, b = 624258, c = 31554, d = 473058, e = 289746, f = 454833, g = 408546, h = 202383, i = 553842
+-----------------------
+✅ [p=181, k=9] N = 782423395209 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [461446047747])
+a = 394074, b = 779202, c = 141327, d = 582642, e = 392193, f = 537714, g = 536337, h = 146466, i = 687978
+-----------------------
+✅ [p=193, k=9] N = 1011478752729 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [355951874547])
+a = 610866, b = 769518, c = 214857, d = 668718, e = 344457, f = 667566, g = 437193, h = 548334, i = 720882
+-----------------------
+✅ [p=199, k=9] N = 1143246377529 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [443827634067])
+a = 601434, b = 874782, c = 127593, d = 708462, e = 384633, f = 702414, g = 528777, h = 479646, i = 795978
+-----------------------
+✅ [p=7, k=10] N = 2160900 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [1009200])
+a = 740, b = 1270, c = 20, d = 970, e = 580, f = 940, g = 820, h = 460, i = 1130
+-----------------------
+✅ [p=13, k=10] N = 25704900 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [14257200])
+a = 2330, b = 4460, c = 620, d = 3340, e = 2180, f = 3130, g = 3020, h = 1030, i = 3940
+-----------------------
+✅ [p=19, k=10] N = 117288900 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [44698800])
+a = 6170, b = 8780, c = 1460, d = 7180, e = 3860, f = 7130, g = 5260, h = 5030, i = 8020
+-----------------------
+✅ [p=31, k=10] N = 831168900 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [351217200])
+a = 15370, b = 24340, c = 1580, d = 19060, e = 10820, f = 18730, g = 15220, h = 11030, i = 21860
+-----------------------
+✅ [p=37, k=10] N = 1686744900 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [603217200])
+a = 24580, b = 31910, c = 8020, d = 27290, e = 14180, f = 27220, g = 18380, h = 21620, i = 29690
+-----------------------
+✅ [p=43, k=10] N = 3076920900 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [1221697200])
+a = 30740, b = 45830, c = 5620, d = 36730, e = 20180, f = 36340, g = 27980, h = 23860, i = 41530
+-----------------------
+✅ [p=61, k=10] N = 12461256900 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [4336561200])
+a = 68570, b = 84340, c = 25420, d = 74260, e = 38020, f = 74170, g = 47380, h = 62470, i = 79460
+-----------------------
+✅ [p=67, k=10] N = 18136008900 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [9117950700])
+a = 65140, b = 117580, c = 8230, d = 88780, e = 55130, f = 84940, g = 77530, h = 35660, i = 104180
+-----------------------
+✅ [p=73, k=10] N = 25558416900 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [9468577200])
+a = 92980, b = 127510, c = 25580, d = 106090, e = 56180, f = 105580, g = 75220, h = 78380, i = 117290
+-----------------------
+✅ [p=79, k=10] N = 35055072900 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [18444384300])
+a = 88420, b = 164180, c = 16790, d = 123380, e = 78410, f = 116980, g = 109610, h = 44180, i = 145220
+-----------------------
+✅ [p=97, k=10] N = 79676352900 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [46381306800])
+a = 126580, b = 248630, c = 42860, d = 185930, e = 124340, f = 172180, g = 170540, h = 48980, i = 219530
+-----------------------
+✅ [p=103, k=10] N = 101295792900 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [44717904300])
+a = 165380, b = 271820, c = 7690, d = 210220, e = 122090, f = 205420, g = 172490, h = 111820, i = 242980
+-----------------------
+✅ [p=109, k=10] N = 127042344900 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [46553054700])
+a = 209060, b = 282220, c = 60730, d = 236620, e = 124570, f = 235660, g = 165370, h = 178540, i = 260420
+-----------------------
+✅ [p=127, k=10] N = 234130176900 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [79687441200])
+a = 305290, b = 353420, c = 126580, d = 322220, e = 162980, f = 322090, g = 192620, h = 287510, i = 338180
+-----------------------
+✅ [p=139, k=10] N = 335970936900 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [173982817200])
+a = 276020, b = 507590, c = 46220, d = 382010, e = 240820, f = 363380, g = 337420, h = 142580, i = 449210
+-----------------------
+✅ [p=151, k=10] N = 467897040900 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [201818390700])
+a = 360260, b = 580820, c = 27530, d = 452020, e = 259370, f = 443060, g = 365770, h = 251540, i = 520420
+-----------------------
+✅ [p=157, k=10] N = 546815880900 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [191632522800])
+a = 450980, b = 563270, c = 161740, d = 491770, e = 252740, f = 491020, g = 318740, h = 407020, i = 528730
+-----------------------
+✅ [p=163, k=10] N = 635320584900 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [310936090800])
+a = 391130, b = 693620, c = 35060, d = 525620, e = 321940, f = 505370, g = 453940, h = 224870, i = 615380
+-----------------------
+✅ [p=181, k=10] N = 965954808900 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [569686478700])
+a = 437860, b = 865780, c = 157030, d = 647380, e = 435770, f = 597460, g = 595930, h = 162740, i = 764420
+-----------------------
+✅ [p=193, k=10] N = 1248739200900 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [439446758700])
+a = 678740, b = 855020, c = 238730, d = 743020, e = 382730, f = 741740, g = 485770, h = 609260, i = 800980
+-----------------------
+✅ [p=199, k=10] N = 1411415280900 is a quasi magic square in the form of (k*3*p²)² (incorrect axes = [547935350700])
+a = 668260, b = 971980, c = 141770, d = 787180, e = 427370, f = 780460, g = 587530, h = 532940, i = 88442

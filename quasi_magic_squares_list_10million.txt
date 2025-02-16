@@ -1,0 +1,120 @@
+------------------------------------------------------
+Partial magic square for N = 21609, e = 58, incorrect axes = [10092]
+a = 74, b = 127, c = 2, d = 97, e = 58, f = 94, g = 82, h = 46, i = 113
+✅ N is in the form of (k*3*p²)² with p=7 and k=1
+------------------------------------------------------
+Partial magic square for N = 86436, e = 116, incorrect axes = [40368]
+a = 148, b = 254, c = 4, d = 194, e = 116, f = 188, g = 164, h = 92, i = 226
+✅ N is in the form of (k*3*p²)² with p=7 and k=2
+------------------------------------------------------
+Partial magic square for N = 194481, e = 174, incorrect axes = [90828]
+a = 222, b = 381, c = 6, d = 291, e = 174, f = 282, g = 246, h = 138, i = 339
+✅ N is in the form of (k*3*p²)² with p=7 and k=3
+------------------------------------------------------
+Partial magic square for N = 257049, e = 218, incorrect axes = [142572]
+a = 233, b = 446, c = 62, d = 334, e = 218, f = 313, g = 302, h = 103, i = 394
+✅ N is in the form of (k*3*p²)² with p=13 and k=1
+------------------------------------------------------
+Partial magic square for N = 345744, e = 232, incorrect axes = [161472]
+a = 296, b = 508, c = 8, d = 388, e = 232, f = 376, g = 328, h = 184, i = 452
+✅ N is in the form of (k*3*p²)² with p=7 and k=4
+------------------------------------------------------
+Partial magic square for N = 540225, e = 290, incorrect axes = [252300]
+a = 370, b = 635, c = 10, d = 485, e = 290, f = 470, g = 410, h = 230, i = 565
+✅ N is in the form of (k*3*p²)² with p=7 and k=5
+------------------------------------------------------
+Partial magic square for N = 777924, e = 348, incorrect axes = [363312]
+a = 444, b = 762, c = 12, d = 582, e = 348, f = 564, g = 492, h = 276, i = 678
+✅ N is in the form of (k*3*p²)² with p=7 and k=6
+------------------------------------------------------
+Partial magic square for N = 1028196, e = 436, incorrect axes = [570288]
+a = 466, b = 892, c = 124, d = 668, e = 436, f = 626, g = 604, h = 206, i = 788
+✅ N is in the form of (k*3*p²)² with p=13 and k=2
+------------------------------------------------------
+Partial magic square for N = 1058841, e = 406, incorrect axes = [494508]
+a = 518, b = 889, c = 14, d = 679, e = 406, f = 658, g = 574, h = 322, i = 791
+✅ N is in the form of (k*3*p²)² with p=7 and k=7
+------------------------------------------------------
+Partial magic square for N = 1172889, e = 386, incorrect axes = [446988]
+a = 617, b = 878, c = 146, d = 718, e = 386, f = 713, g = 526, h = 503, i = 802
+✅ N is in the form of (k*3*p²)² with p=19 and k=1
+------------------------------------------------------
+Partial magic square for N = 1382976, e = 464, incorrect axes = [645888]
+a = 592, b = 1016, c = 16, d = 776, e = 464, f = 752, g = 656, h = 368, i = 904
+✅ N is in the form of (k*3*p²)² with p=7 and k=8
+------------------------------------------------------
+Partial magic square for N = 1750329, e = 522, incorrect axes = [817452]
+a = 666, b = 1143, c = 18, d = 873, e = 522, f = 846, g = 738, h = 414, i = 1017
+✅ N is in the form of (k*3*p²)² with p=7 and k=9
+------------------------------------------------------
+Partial magic square for N = 2160900, e = 580, incorrect axes = [1009200]
+a = 740, b = 1270, c = 20, d = 970, e = 580, f = 940, g = 820, h = 460, i = 1130
+✅ N is in the form of (k*3*p²)² with p=7 and k=10
+------------------------------------------------------
+Partial magic square for N = 2313441, e = 654, incorrect axes = [1283148]
+a = 699, b = 1338, c = 186, d = 1002, e = 654, f = 939, g = 906, h = 309, i = 1182
+✅ N is in the form of (k*3*p²)² with p=13 and k=3
+------------------------------------------------------
+Partial magic square for N = 2614689, e = 638, incorrect axes = [1221132]
+a = 814, b = 1397, c = 22, d = 1067, e = 638, f = 1034, g = 902, h = 506, i = 1243
+✅ N is in the form of (k*3*p²)² with p=7 and k=11
+------------------------------------------------------
+Partial magic square for N = 3111696, e = 696, incorrect axes = [1453248]
+a = 888, b = 1524, c = 24, d = 1164, e = 696, f = 1128, g = 984, h = 552, i = 1356
+✅ N is in the form of (k*3*p²)² with p=7 and k=12
+------------------------------------------------------
+Partial magic square for N = 3651921, e = 754, incorrect axes = [1705548]
+a = 962, b = 1651, c = 26, d = 1261, e = 754, f = 1222, g = 1066, h = 598, i = 1469
+✅ N is in the form of (k*3*p²)² with p=7 and k=13
+------------------------------------------------------
+Partial magic square for N = 4112784, e = 872, incorrect axes = [2281152]
+a = 932, b = 1784, c = 248, d = 1336, e = 872, f = 1252, g = 1208, h = 412, i = 1576
+✅ N is in the form of (k*3*p²)² with p=13 and k=4
+------------------------------------------------------
+Partial magic square for N = 4235364, e = 812, incorrect axes = [1978032]
+a = 1036, b = 1778, c = 28, d = 1358, e = 812, f = 1316, g = 1148, h = 644, i = 1582
+✅ N is in the form of (k*3*p²)² with p=7 and k=14
+------------------------------------------------------
+Partial magic square for N = 4691556, e = 772, incorrect axes = [1787952]
+a = 1234, b = 1756, c = 292, d = 1436, e = 772, f = 1426, g = 1052, h = 1006, i = 1604
+✅ N is in the form of (k*3*p²)² with p=19 and k=2
+------------------------------------------------------
+Partial magic square for N = 4862025, e = 870, incorrect axes = [2270700]
+a = 1110, b = 1905, c = 30, d = 1455, e = 870, f = 1410, g = 1230, h = 690, i = 1695
+✅ N is in the form of (k*3*p²)² with p=7 and k=15
+------------------------------------------------------
+Partial magic square for N = 5531904, e = 928, incorrect axes = [2583552]
+a = 1184, b = 2032, c = 32, d = 1552, e = 928, f = 1504, g = 1312, h = 736, i = 1808
+✅ N is in the form of (k*3*p²)² with p=7 and k=16
+------------------------------------------------------
+Partial magic square for N = 6245001, e = 986, incorrect axes = [2916588]
+a = 1258, b = 2159, c = 34, d = 1649, e = 986, f = 1598, g = 1394, h = 782, i = 1921
+✅ N is in the form of (k*3*p²)² with p=7 and k=17
+------------------------------------------------------
+Partial magic square for N = 6426225, e = 1090, incorrect axes = [3564300]
+a = 1165, b = 2230, c = 310, d = 1670, e = 1090, f = 1565, g = 1510, h = 515, i = 1970
+✅ N is in the form of (k*3*p²)² with p=13 and k=5
+------------------------------------------------------
+Partial magic square for N = 7001316, e = 1044, incorrect axes = [3269808]
+a = 1332, b = 2286, c = 36, d = 1746, e = 1044, f = 1692, g = 1476, h = 828, i = 2034
+✅ N is in the form of (k*3*p²)² with p=7 and k=18
+------------------------------------------------------
+Partial magic square for N = 7800849, e = 1102, incorrect axes = [3643212]
+a = 1406, b = 2413, c = 38, d = 1843, e = 1102, f = 1786, g = 1558, h = 874, i = 2147
+✅ N is in the form of (k*3*p²)² with p=7 and k=19
+------------------------------------------------------
+Partial magic square for N = 8311689, e = 1082, incorrect axes = [3512172]
+a = 1537, b = 2434, c = 158, d = 1906, e = 1082, f = 1873, g = 1522, h = 1103, i = 2186
+✅ N is in the form of (k*3*p²)² with p=31 and k=1
+------------------------------------------------------
+Partial magic square for N = 8643600, e = 1160, incorrect axes = [4036800]
+a = 1480, b = 2540, c = 40, d = 1940, e = 1160, f = 1880, g = 1640, h = 920, i = 2260
+✅ N is in the form of (k*3*p²)² with p=7 and k=20
+------------------------------------------------------
+Partial magic square for N = 9253764, e = 1308, incorrect axes = [5132592]
+a = 1398, b = 2676, c = 372, d = 2004, e = 1308, f = 1878, g = 1812, h = 618, i = 2364
+✅ N is in the form of (k*3*p²)² with p=13 and k=6
+------------------------------------------------------
+Partial magic square for N = 9529569, e = 1218, incorrect axes = [4450572]
+a = 1554, b = 2667, c = 42, d = 2037, e = 1218, f = 1974, g = 1722, h = 966, i = 2373
+✅ N is in the form of (k*3*p²)² with p=7 and k=21

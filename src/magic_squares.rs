@@ -107,7 +107,7 @@ pub struct Solution {
 
 /// Finds “perfect squares” (i.e. candidate magic squares) for a given N.
 pub fn find_perfect_squares(
-    rep_map: &FxHashMap<u64, Box<[(u64, u64)]>>,
+    precomputed_square_sums: Option<&FxHashMap<u64, Box<[(u64, u64)]>>>,
     N: u64,
 ) -> Option<Solution> {
     // Check if N can be written as the sum of three squares. If it can't, then no magic square can be formed.
@@ -124,19 +124,24 @@ pub fn find_perfect_squares(
 
     // Loop over candidate extra number e (with e² < N).
     for e in 1..=max_val {
-        let X = N - e * e; // We want the pairs (a,i), (b,h), (d,f) to satisfy x²+y² = X.
-                           // Get from rep_map
-        let rep_list = match rep_map.get(&X) {
-            Some(list) => list,
-            None => continue,
+        let X = N - e * e;
+
+        // We want the pairs (a,i), (b,h), (d,f) to satisfy x²+y² = X.
+        // Get from precomputed_square_sums if possible
+        let pairs_list = match precomputed_square_sums {
+            Some(prec) => match prec.get(&X) {
+                Some(pairs) => pairs,
+                None => continue,
+            },
+            None => &generate_squares::find_pairs_two_pointers(X).into_boxed_slice(),
         };
 
-        if rep_list.len() <= 3 {
+        if pairs_list.len() <= 3 {
             continue;
         }
 
         // For each non-symmetric permutation of three pairs...
-        let orderings = utils::nonsymetric_permutations_3(&rep_list);
+        let orderings = utils::nonsymetric_permutations_3(&pairs_list);
         for ordering in orderings {
             // Create the four full orderings (reversing some of the pairs)
             let (p1, p2, p3) = ordering;
