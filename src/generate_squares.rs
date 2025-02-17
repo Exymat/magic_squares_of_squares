@@ -40,7 +40,7 @@ fn can_be_sum_of_two_squares(n: u64) -> bool {
 
 /// Return all pairs (x, y) such that x² + y² == n using a two-pointers approach.
 /// If n is not expressible, an empty vector is returned.
-pub fn find_pairs_two_pointers(n: u64) -> Vec<(u64, u64)> {
+pub fn find_sum_of_squares_pairs(n: u64) -> Vec<(u64, u64)> {
     if !can_be_sum_of_two_squares(n) {
         return Vec::new();
     }
@@ -76,7 +76,7 @@ pub fn find_pairs_two_pointers(n: u64) -> Vec<(u64, u64)> {
 /// Process a single number n and return Some((n, pairs)) if n is expressible as a sum of two squares,
 /// otherwise return None.
 fn process_n(n: u64) -> Option<(u64, Vec<(u64, u64)>)> {
-    let pairs = find_pairs_two_pointers(n);
+    let pairs = find_sum_of_squares_pairs(n);
     if !pairs.is_empty() {
         Some((n, pairs))
     } else {
@@ -109,4 +109,51 @@ pub fn generate_squares_sum_fast(n: u64) -> FxHashMap<u64, Box<[(u64, u64)]>> {
         .flat_map_iter(batch_process)
         .map(|(n, pairs)| (n, pairs.into_boxed_slice()))
         .collect()
+}
+
+/// Returns (true, r) if n is a perfect square (with r = √n), else (false, 0).
+pub fn is_perfect_square(n: u64) -> (bool, u64) {
+    if n == 0 {
+        return (true, 0);
+    }
+
+    let r = num_integer::sqrt(n);
+    (r * r == n, r)
+}
+
+pub struct PrecomputedPerfectSquares {
+    pub map: FxHashMap<u64, (bool, u64)>,
+    pub max: u64,
+}
+
+impl PrecomputedPerfectSquares {
+    pub fn get(&self, n: u64) -> Option<(bool, u64)> {
+        if n > self.max {
+            let res = is_perfect_square(n);
+            return Some(res);
+        }
+        self.map.get(&n).copied()
+    }
+}
+
+pub fn precompute_perfect_squares(max_val: u64) -> PrecomputedPerfectSquares {
+    // Using multiprocessing
+    let cpus = num_cpus::get() as u64;
+    // Compute batch size: ceil(n / cpus) // 8, but at least 1.
+    let batch_size = (((max_val + cpus - 1) / cpus) / 8).max(1) as usize;
+
+    PrecomputedPerfectSquares {
+        max: max_val,
+        map: (0..=max_val)
+            .collect::<Vec<u64>>() // Collecting the range into a Vec
+            .par_chunks(batch_size)
+            .flat_map_iter(|batch| {
+                batch
+                    .iter()
+                    .map(|&i| (i, is_perfect_square(i)))
+                    .filter(|(_, (is_ps, _))| *is_ps)
+                    .collect::<Vec<_>>()
+            })
+            .collect(),
+    }
 }

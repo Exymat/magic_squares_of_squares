@@ -3,11 +3,18 @@ use std::sync::Arc;
 use std::time::Instant;
 
 use crate::generate_squares;
+use crate::generate_squares::PrecomputedPerfectSquares;
 use crate::utils;
 
 /// Checks if the given 3 pairs (with extra value `e` and target N) form a (partial or perfect) magic square.
 /// In the ordering the three pairs correspond to (a,i), (b,h) and (d,f) respectively.
-fn is_magic_square(ordering: &[(u64, u64); 3], e: u64, N: u64, X: u64) -> Option<Solution> {
+fn is_magic_square(
+    perfect_squares_precomp: Option<&PrecomputedPerfectSquares>,
+    ordering: &[(u64, u64); 3],
+    e: u64,
+    N: u64,
+    X: u64,
+) -> Option<Solution> {
     let (a, i_val) = ordering[0];
     let (b, h) = ordering[1];
     let (d, f) = ordering[2];
@@ -18,7 +25,13 @@ fn is_magic_square(ordering: &[(u64, u64); 3], e: u64, N: u64, X: u64) -> Option
         return None;
     }
     let c2 = N - sum_ab;
-    let (is_ps_c, c) = utils::is_perfect_square(c2);
+    let (is_ps_c, c) = match perfect_squares_precomp {
+        Some(prec) => match prec.get(c2) {
+            Some((is_ps, c)) => (is_ps, c),
+            None => return None,
+        },
+        None => generate_squares::is_perfect_square(c2),
+    };
     if !is_ps_c {
         return None;
     }
@@ -29,7 +42,14 @@ fn is_magic_square(ordering: &[(u64, u64); 3], e: u64, N: u64, X: u64) -> Option
         return None;
     }
     let g2 = N - sum_hi;
-    let (is_ps_g, g) = utils::is_perfect_square(g2);
+    let (is_ps_g, g) = match perfect_squares_precomp {
+        Some(prec) => match prec.get(g2) {
+            Some((is_ps, g)) => (is_ps, g),
+            None => return None,
+        },
+        None => generate_squares::is_perfect_square(g2),
+    };
+
     if !is_ps_g {
         return None;
     }
@@ -107,6 +127,7 @@ pub struct Solution {
 
 /// Finds “perfect squares” (i.e. candidate magic squares) for a given N.
 pub fn find_perfect_squares(
+    perfect_squares_precomp: Option<&PrecomputedPerfectSquares>,
     precomputed_square_sums: Option<&FxHashMap<u64, Box<[(u64, u64)]>>>,
     N: u64,
 ) -> Option<Solution> {
@@ -123,7 +144,7 @@ pub fn find_perfect_squares(
     let mut tested_es: FxHashSet<u64> = FxHashSet::default();
 
     // Loop over candidate extra number e (with e² < N).
-    for e in 1..=max_val {
+    for e in 1..max_val {
         let X = N - e * e;
 
         // We want the pairs (a,i), (b,h), (d,f) to satisfy x²+y² = X.
@@ -133,7 +154,7 @@ pub fn find_perfect_squares(
                 Some(pairs) => pairs,
                 None => continue,
             },
-            None => &generate_squares::find_pairs_two_pointers(X).into_boxed_slice(),
+            None => &generate_squares::find_sum_of_squares_pairs(X).into_boxed_slice(),
         };
 
         if pairs_list.len() <= 3 {
@@ -146,19 +167,24 @@ pub fn find_perfect_squares(
             // Create the four full orderings (reversing some of the pairs)
             let (p1, p2, p3) = ordering;
 
-            let (a, i) = p1;
-            if (a < e || i < e) {
-                continue;
-            }
-
-            let full_orderings = vec![
+            /// We believe (empirically) that if either a or i is less than e,
+            /// the current square is a duplicate from a previously-tested square.
+            /// This is because we can always apply transformations to the square to make a or i the center (e), while preserving the sum of different axes.
+            /// We don't have proof of this, but it seems to work.
+            /// We prefer to disable that optimization for proof purposes, as we can't prove it's true.
+            ///
+            // let (a, i) = p1;
+            // if (a < e || i < e) {
+            //     continue;
+            // }
+            let full_orderings = [
                 [p1, p2, p3],
                 [p1, p2, (p3.1, p3.0)],
                 [p1, (p2.1, p2.0), p3],
                 [p1, (p2.1, p2.0), (p3.1, p3.0)],
             ];
             for o in full_orderings {
-                match is_magic_square(&o, e, N, X) {
+                match is_magic_square(perfect_squares_precomp, &o, e, N, X) {
                     Some(solution) => {
                         return Some(solution);
                     }

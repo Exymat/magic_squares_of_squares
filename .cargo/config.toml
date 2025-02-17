@@ -1,2 +1,7 @@
 [build]
-rustflags = ["-C", "target-cpu=native"]
+rustflags = ["-C", "target-cpu=native", "-Ctarget-cpu=native"]
+
+[alias]
+test_n = "run --quiet --release test_n"
+test_kp = "run --quiet --release test_kp"
+generate = "run --quiet --release generate"

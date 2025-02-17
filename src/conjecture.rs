@@ -1,4 +1,4 @@
-use crate::utils;
+use crate::{generate_squares, utils};
 
 pub fn verify_if_N_matches_conjecture(N: u64) -> Option<(u64, u64)> {
     // Conjecture: N is of the form (k*3*p²)² with p=6n+1 and p prime. We'll first check if N is a multiple of 9.
@@ -8,7 +8,7 @@ pub fn verify_if_N_matches_conjecture(N: u64) -> Option<(u64, u64)> {
     }
 
     // Now we have to check if (N/9) is a square (as N/9==(kp²)²).
-    let (is_ps, n) = utils::is_perfect_square(N / 9);
+    let (is_ps, n) = generate_squares::is_perfect_square(N / 9);
     if !is_ps {
         println!("❌ N/9 is not a perfect square {}", N / 9);
         return None;

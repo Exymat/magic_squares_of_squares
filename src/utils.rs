@@ -1,3 +1,5 @@
+use fxhash::FxHashMap;
+
 /// Returns the “bit‐length” of x (i.e. ⌊log₂(x)⌋+1).
 fn bit_length(x: u64) -> u32 {
     if x == 0 {
@@ -15,15 +17,6 @@ pub fn can_be_written_as_sum_of_three_squares(n: u64) -> bool {
     } else {
         true
     }
-}
-
-/// Returns (true, r) if n is a perfect square (with r = √n), else (false, 0).
-pub fn is_perfect_square(n: u64) -> (bool, u64) {
-    if n == 0 {
-        return (false, 0);
-    }
-    let r = num_integer::sqrt(n);
-    (r * r == n, r)
 }
 
 /// Check if a number is prime
