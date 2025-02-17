@@ -4,17 +4,17 @@ Authors: [Florian ERNST](https://github.com/Themrzz), [Albin MOREL](https://gith
 
 ## Table of contents
   - [Introduction](#introduction)
-  - [List of tested values of `N` with no perfect magic square](#list-of-tested-values-of-n-with-no-perfect-magic-square)
-  - ["Smallest" quasi-magic-square found](#smallest-quasi-magic-square-found)
-  - [Conjecture on quasi magic squares](#conjecture-on-quasi-magic-squares)
-  - ["Largest" quasi magic square found](#largest-quasi-magic-square-found)
-  - [How to try](#how-to-try)
+  - [🗞️ List of tested values of `N` with no perfect magic square](#️-list-of-tested-values-of-n-with-no-perfect-magic-square)
+  - [👶 "Smallest" quasi-magic-square found](#-smallest-quasi-magic-square-found)
+  - [🔮 Conjecture on quasi magic squares](#-conjecture-on-quasi-magic-squares)
+  - [🕶️ "Largest" quasi magic square found](#️-largest-quasi-magic-square-found)
+  - [💻 How to try](#-how-to-try)
     - [Testing ranges of `N`](#testing-ranges-of-n)
     - [Testing ranges of `k` and `p`](#testing-ranges-of-k-and-p)
     - [Generating a very large quasi magic square](#generating-a-very-large-quasi-magic-square)
-  - [How it works](#how-it-works)
-  - [Optimizations](#optimizations)
-  - [Benchmarks](#benchmarks)
+  - [🤔 How it works](#-how-it-works)
+  - [🚀 Optimizations](#-optimizations)
+  - [🕐 Benchmarks](#-benchmarks)
 
 ## Introduction
 
@@ -38,13 +38,13 @@ N = (3 k p^2)^2, \quad \text{where } k \in \mathbb{N}^+ \text{ and } p \text{ is
 $$
 
 
-## List of tested values of $N$ with no perfect magic square
+## 🗞️ List of tested values of $N$ with no perfect magic square
 
 We tested up to $N = 10000000$ (10 million) and found no perfect magic square. However we found 30 quasi magic squares, with the smallest one at $N=21609$ and the biggest one at $N=9529569$.
 
 [The entire list can be found here](https://github.com/TheMrZZ/magic_squares_of_squares/blob/main/quasi_magic_squares_list_10million.txt).
 
-## "Smallest" quasi-magic-square found
+## 👶 "Smallest" quasi-magic-square found
 
 Here's the smallest quasi-magic-square of squares we found:
 |     |      |      |
@@ -55,7 +55,7 @@ Here's the smallest quasi-magic-square of squares we found:
 
 All rows, columns, and diagonal sums are equal to $21609$ except for the bottom-left to top-right diagonal which is equal to $10092$.
 
-## Conjecture on quasi magic squares
+## 🔮 Conjecture on quasi magic squares
 
 1. We conjecture that all quasi magic squares have $N$ such as
 
@@ -74,7 +74,7 @@ $$
 
 **We have no idea *why* this conjecture works**, but we've tested it empirically on large numbers. Our only guess concerns the `3²` which we assume is related to the size of the magic square (`3x3`).
 
-## "Largest" quasi magic square found
+## 🕶️ "Largest" quasi magic square found
 
 The above conjecture allows us to generate quasi magic squares with arbitrarily large $N$. The biggest we generated was $N = 46 432 503 939 600$ (46 trillion 432 billion) with $k=10$ and $p=199$:
 |          |          |          |
@@ -85,7 +85,7 @@ The above conjecture allows us to generate quasi magic squares with arbitrarily 
 
 All rows, columns and diagonal sums are equal to $N$ except for the bottom-left to top-right diagonal which is equal to $18 628 397 803 200$ (18 trillion 628 billion).
 
-## How to try
+## 💻 How to try
 
 To run the code in this repository, you must [install Rust](https://www.rust-lang.org/learn/get-started). You can then run different commands:
 ```sh
@@ -264,7 +264,7 @@ cargo generate 5 73 # Generate the quasi magic square with k=10 and p=169
   </div>
 </details>
 
-## How it works
+## 🤔 How it works
 
 We'll name our cells like this:
 |     |     |     |
@@ -290,7 +290,7 @@ If these equations don't yield integers, we stop there as it means the current p
 
 7. If 7/8 axes are correct, we found a quasi-perfect square. If 8/8 axes are correct, we found a perfect square. Our program is designed to instantly interrupt its operation in that case, panic and send a big message.
 
-## Optimizations
+## 🚀 Optimizations
 
 Here's a list of some optimizations we made to crunch numbers as fast as possible:
 1. Avoid generating symmetrical permutations of the same magic square (ex: symmetry by a diagonal, rotation by 90°... as they give the same square)
@@ -299,7 +299,7 @@ Here's a list of some optimizations we made to crunch numbers as fast as possibl
 4. Remove as much overhead as possible in Rust objects (avoid using `Vec`, use `FxHashMap` instead of the native `HashMap`)
 5. Use multiprocessing to compute batches of `N` in parallel
 
-## Benchmarks
+## 🕐 Benchmarks
 
 These tests were performed on an AMD 5600X processor with 6x2 cores. They all leverage parallelism. They're probably not very reproductible, but they give a good idea of how the processing time scales based on inputs.
 
