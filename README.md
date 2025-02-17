@@ -1,4 +1,4 @@
-# Magic squares of squares
+# 🪄🧊 Magic squares of squares
 
 Authors: [Florian ERNST](https://github.com/Themrzz), [Albin MOREL](https://github.com/Exymat)
 
