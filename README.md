@@ -30,7 +30,7 @@ For example, this is a quasi magic square of squares (all of these integers are 
 <sub><sup>Source: [A Magic Square Breakthrough - Numberphile](https://www.youtube.com/watch?v=stpiBy6gWOA&t=58s) </sup></sub>
 
 We aim to:
-1. Finding as many "quasi-magic-squares" as possible, and if possible find a real 3x3 magic square of squares ;
+1. Find as many "quasi-magic-squares" as possible, and if possible find a real 3x3 magic square of squares ;
 2. Empirically show that all "quasi-magic-squares" are under the following form:
 
 $$
