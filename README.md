@@ -34,7 +34,7 @@ We aim to:
 2. Empirically show that all "quasi-magic-squares" are under the following form:
 
 $$
-N = (3 k p^2)^2, \quad \text{where } p \text{ is a prime such that } p \equiv 1 \pmod{6}.
+N = (3 k p^2)^2, \quad \text{where } k \in \mathbb{N}^+ \text{ and } p \text{ is a prime such that } p \equiv 1 \pmod{6}.
 $$
 
 
