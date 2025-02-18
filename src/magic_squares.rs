@@ -138,7 +138,7 @@ pub fn find_perfect_squares(
 
     // Maximum value for any of the 9 numbers.
     // Max value for e is sqrt(N/3), since N is the sum of three squares.
-    let max_val = num_integer::sqrt(N / );
+    let max_val = num_integer::sqrt(N / 3);
 
     // Store all e tested because we know that if we try a a->e->i diagonal, if e ever takes `a` or `i` later,
     // it will be a duplicate of the same square (with some translations).
