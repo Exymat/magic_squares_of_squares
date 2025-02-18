@@ -1,177 +1,158 @@
 #![allow(warnings)]
 
-use num_integer::sqrt;
 use rayon::prelude::*;
-use std::{sync::Arc, time::Instant};
+use std::time::Instant;
 
 mod conjecture;
 mod generate_squares;
 mod magic_squares;
 mod utils;
 
+/// Test all values of N in the range [n_min, n_max). When `multiprocessing` is true,
+/// a parallel iterator is used.
 fn test_all_N_up_in_range(n_min: u64, n_max: u64, multiprocessing: bool) {
     let start = Instant::now();
 
-    let precomputed_squares_sum = generate_squares::generate_squares_sum_fast(n_max);
-    let precomputed_perfect_squares = generate_squares::precompute_perfect_squares(n_max);
-    println!("Checking N = {}..{} ", n_min, n_max);
+    // Precompute common data.
+    let squares_sum = generate_squares::generate_squares_sum_fast(n_max);
+    let perfect_squares = generate_squares::precompute_perfect_squares(n_max);
 
-    // Process the range in parallel.
-    let numbers: Vec<u64> = (n_min..n_max).collect();
+    println!("Checking N = {}..{}", n_min, n_max);
 
-    let mut responses: Vec<magic_squares::Solution> = if multiprocessing {
-        numbers
-            .par_chunks(1000)
-            .flat_map_iter(|batch| {
-                batch
-                    .iter()
-                    .map(|i| {
-                        magic_squares::find_perfect_squares(
-                            None,
-                            Option::from(&precomputed_squares_sum),
-                            *i,
-                        )
-                    })
-                    .filter(|x| x.is_some())
-                    .map(|x| x.unwrap())
-                    .collect::<Vec<_>>()
-            })
+    // Define a closure that attempts to find a solution for a given N.
+    // In the parallel branch we pass `None` for perfect_squares (if that's desired);
+    // otherwise we pass a reference.
+    let find_solution = |n: u64| {
+        let ps = if multiprocessing {
+            None
+        } else {
+            Some(&perfect_squares)
+        };
+        magic_squares::find_perfect_squares(ps, Some(&squares_sum), n)
+    };
+
+    // Choose parallel or sequential processing.
+    let solutions: Vec<magic_squares::Solution> = if multiprocessing {
+        (n_min..n_max)
+            .into_par_iter()
+            .filter_map(find_solution)
             .collect()
     } else {
-        // Without parallelism
-        numbers
-            .iter()
-            .map(|i| {
-                magic_squares::find_perfect_squares(
-                    Option::from(&precomputed_perfect_squares),
-                    Option::from(&precomputed_squares_sum),
-                    *i,
-                )
-            })
-            .filter(|x| x.is_some())
-            .map(|x| x.unwrap())
+        (n_min..n_max)
+            .into_iter()
+            .filter_map(find_solution)
             .collect()
     };
 
-    responses.sort_by_key(|x| x.N);
+    // Sort solutions by N.
+    let mut responses = solutions;
+    responses.sort_by_key(|sol| sol.N);
 
-    for r in responses {
+    // Print each solution.
+    for sol in responses {
         println!("------------------------------------------------------");
-        if r.solution_type == magic_squares::SolutionType::Perfect {
+        if sol.solution_type == magic_squares::SolutionType::Perfect {
             println!(">>>> OMG WE FOUND A PERFECT SOLUTION!!! <<<<");
             println!(">>>> WAKE UP HONEY A NEW SOLUTION JUST DROPPED <<<<");
-            println!("Perfect Solution for N = {}, e = {}", r.N, r.e);
+            println!("Perfect Solution for N = {}, e = {}", sol.N, sol.e);
             println!(
                 "a = {}, b = {}, c = {}, d = {}, e = {}, f = {}, g = {}, h = {}, i = {}",
-                r.a, r.b, r.c, r.d, r.e, r.f, r.g, r.h, r.i
+                sol.a, sol.b, sol.c, sol.d, sol.e, sol.f, sol.g, sol.h, sol.i
             );
-            std::process::exit(0); // Panic to stop the program, making it easier to see the output. Not like it's gonna happen anyway.
+            std::process::exit(0);
         } else {
-            // We found a partial solution.
             println!(
                 "Partial magic square for N = {}, e = {}, incorrect axes = {:?}",
-                r.N, r.e, r.incorrect_axis_values
+                sol.N, sol.e, sol.incorrect_axis_values
             );
             println!(
                 "a = {}, b = {}, c = {}, d = {}, e = {}, f = {}, g = {}, h = {}, i = {}",
-                r.a, r.b, r.c, r.d, r.e, r.f, r.g, r.h, r.i
+                sol.a, sol.b, sol.c, sol.d, sol.e, sol.f, sol.g, sol.h, sol.i
             );
 
-            match conjecture::verify_if_N_matches_conjecture(r.N) {
+            match conjecture::verify_if_N_matches_conjecture(sol.N) {
                 Some((p, k)) => {
                     println!("✅ N is in the form of (k*3*p²)² with p={} and k={}", p, k);
                 }
                 None => {
-                    println!("❌😱😱😱😱😱😱😱😱😱 N is not a multiple of (k*3*p)²");
+                    println!("❌ N is not a multiple of (k*3*p²)²");
                     panic!("N is not a multiple of (k*3*p²)²");
                 }
             }
         }
     }
 
-    let duration = start.elapsed();
-    println!("Time: {:.2} seconds", duration.as_secs_f64());
+    println!("Time: {:.2} seconds", start.elapsed().as_secs_f64());
 }
 
+/// Test all numbers of the form (k*3*p²)² with k in [1, max_k] and p prime in [1, max_p]
+/// (with the extra condition that p ≡ 1 (mod 6)).
 fn test_kp_form_up_to(max_k: u64, max_p: u64) {
     let start = Instant::now();
 
-    // List all N we are gonna generate (tuples of (k, p, N))
-    let N_list: Vec<(u64, u64, u64)> = (1..(max_k + 1))
+    // Generate candidate (k, p, N) tuples.
+    let candidates: Vec<(u64, u64, u64)> = (1..=max_k)
         .flat_map(|k| {
-            (1..(max_p + 1))
+            (1..=max_p)
                 .filter(|&p| utils::is_prime(p) && p % 6 == 1)
                 .map(move |p| (k, p, (k * 3 * p.pow(2)).pow(2)))
         })
         .collect();
 
-    // Process without parallelism
-    let mut responses: Vec<(u64, u64, u64, Option<magic_squares::Solution>)> = N_list
-        .iter()
-        .map(|(k, p, N)| {
-            (
-                *k,
-                *p,
-                *N,
-                magic_squares::find_perfect_squares(None, None, *N),
-            )
-        })
+    // Process each candidate.
+    let mut responses: Vec<(u64, u64, u64, Option<magic_squares::Solution>)> = candidates
+        .into_iter()
+        .map(|(k, p, N)| (k, p, N, magic_squares::find_perfect_squares(None, None, N)))
         .collect();
 
-    responses.sort_by_key(|x| (x.0, x.1));
+    responses.sort_by_key(|(k, p, _N, _)| (*k, *p));
 
-    for (k, p, N, r) in responses {
+    for (k, p, N, sol_opt) in responses {
         println!("-----------------------");
-
-        match r {
-            Some(r) => {
-                if r.solution_type == magic_squares::SolutionType::Perfect {
-                    panic!(
-                        "😱 HONEY WAKE UP we just found a perfect solution found for N = {}",
-                        N
-                    );
-                }
-
-                println!(
-                    "✅ [p={}, k={}] N = {} is a quasi magic square in the form of (k*3*p²)² (incorrect axes = {:?})",
-                    p, k, N, r.incorrect_axis_values
-                );
-                println!(
-                    "a = {}, b = {}, c = {}, d = {}, e = {}, f = {}, g = {}, h = {}, i = {}",
-                    r.a, r.b, r.c, r.d, r.e, r.f, r.g, r.h, r.i
+        if let Some(sol) = sol_opt {
+            if sol.solution_type == magic_squares::SolutionType::Perfect {
+                panic!(
+                    "😱 HONEY WAKE UP: perfect solution found for N = {}",
+                    N
                 );
             }
-            None => {
-                println!("❌ N = {} is NOT a quasi magic square in the form of (k*3*p²)² with p={} and k={}", N, p, k);
-            }
+            println!(
+                "✅ [p={}, k={}] N = {} is a quasi magic square (incorrect axes = {:?})",
+                p, k, N, sol.incorrect_axis_values
+            );
+            println!(
+                "a = {}, b = {}, c = {}, d = {}, e = {}, f = {}, g = {}, h = {}, i = {}",
+                sol.a, sol.b, sol.c, sol.d, sol.e, sol.f, sol.g, sol.h, sol.i
+            );
+        } else {
+            println!(
+                "❌ N = {} is NOT a quasi magic square in the form of (k*3*p²)² with p={} and k={}",
+                N, p, k
+            );
         }
     }
 
-    let duration = start.elapsed();
-    println!("Time: {:.2} seconds", duration.as_secs_f64());
+    println!("Time: {:.2} seconds", start.elapsed().as_secs_f64());
 }
 
+/// Generate a single large quasi magic square for the parameters (k, p).
 fn generate_large_quasi_magic_square(k: u64, p: u64) {
     let start = Instant::now();
 
     let N = (k * 3 * p.pow(2)).pow(2);
-
     match magic_squares::find_perfect_squares(None, None, N) {
-        Some(r) => {
-            if r.solution_type == magic_squares::SolutionType::Perfect {
-                panic!(
-                    "😱 HONEY WAKE UP we just found a perfect solution found for N = {}",
-                    N
-                );
+        Some(sol) => {
+            if sol.solution_type == magic_squares::SolutionType::Perfect {
+                panic!("😱 HONEY WAKE UP: perfect solution found for N = {}", N);
             }
 
             println!(
-                "✅ [p={}, k={}] N = {} is a quasi magic square in the form of (k*3*p²)² (incorrect axes = {:?})",
-                p, k, N, r.incorrect_axis_values
+                "✅ [p={}, k={}] N = {} is a quasi magic square (incorrect axes = {:?})",
+                p, k, N, sol.incorrect_axis_values
             );
             println!(
                 "a = {}, b = {}, c = {}, d = {}, e = {}, f = {}, g = {}, h = {}, i = {}",
-                r.a, r.b, r.c, r.d, r.e, r.f, r.g, r.h, r.i
+                sol.a, sol.b, sol.c, sol.d, sol.e, sol.f, sol.g, sol.h, sol.i
             );
         }
         None => {
@@ -182,8 +163,7 @@ fn generate_large_quasi_magic_square(k: u64, p: u64) {
         }
     }
 
-    let duration = start.elapsed();
-    println!("Time: {:.2} seconds", duration.as_secs_f64());
+    println!("Time: {:.2} seconds", start.elapsed().as_secs_f64());
 }
 
 const USAGE: &str = "
@@ -194,32 +174,45 @@ Usage:
 ";
 
 fn main() {
-    let command = std::env::args()
-        .nth(1)
-        .unwrap_or_else(|| panic!("{}", USAGE));
+    let mut args = std::env::args().skip(1);
 
-    let arg1 = std::env::args()
-        .nth(2)
-        .unwrap_or_else(|| panic!("{}", USAGE))
-        .replace("_", "")
-        .parse()
-        .unwrap();
-    let arg2 = std::env::args()
-        .nth(3)
-        .unwrap_or_else(|| panic!("{}", USAGE))
-        .replace("_", "")
-        .parse()
-        .unwrap();
+    let command = args.next().unwrap_or_else(|| {
+        eprintln!("{}", USAGE);
+        std::process::exit(1);
+    });
 
-    if command == "test_n" {
-        test_all_N_up_in_range(arg1, arg2, true);
-    } else if command == "benchmark_n" {
-        test_all_N_up_in_range(arg1, arg2, false);
-    } else if command == "test_kp" {
-        test_kp_form_up_to(arg1, arg2);
-    } else if command == "generate" {
-        generate_large_quasi_magic_square(arg1, arg2);
-    } else {
-        panic!("{}", USAGE);
+    let arg1 = args
+        .next()
+        .unwrap_or_else(|| {
+            eprintln!("{}", USAGE);
+            std::process::exit(1);
+        })
+        .replace('_', "");
+    let arg2 = args
+        .next()
+        .unwrap_or_else(|| {
+            eprintln!("{}", USAGE);
+            std::process::exit(1);
+        })
+        .replace('_', "");
+
+    let arg1: u64 = arg1.parse().unwrap_or_else(|_| {
+        eprintln!("Invalid argument for arg1");
+        std::process::exit(1);
+    });
+    let arg2: u64 = arg2.parse().unwrap_or_else(|_| {
+        eprintln!("Invalid argument for arg2");
+        std::process::exit(1);
+    });
+
+    match command.as_str() {
+        "test_n" => test_all_N_up_in_range(arg1, arg2, true),
+        "benchmark_n" => test_all_N_up_in_range(arg1, arg2, false),
+        "test_kp" => test_kp_form_up_to(arg1, arg2),
+        "generate" => generate_large_quasi_magic_square(arg1, arg2),
+        _ => {
+            eprintln!("{}", USAGE);
+            std::process::exit(1);
+        }
     }
 }
